@@ -1,0 +1,49 @@
+/* Header 1 style */
+
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
+* {
+    font-family: 'Hedvig Letters Sans', sans-serif;
+}
+
+body{
+  margin: 0;
+  font-family: system-ui;
+  padding-bottom: 200px;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 26px;
+}
+li {
+    font-size: 19px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #000000;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 18px 40px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #2faff4;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: rgb(251, 3, 239);
+  color: rgb(253, 253, 253);
+}

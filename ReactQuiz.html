@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <!--
+      Author: Vanlal Vena
+      Date: 05/01/2024
+
+      Filename: ReactQuiz.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>React</title>
+   <link href="styles.css" rel="stylesheet" />
+   <script src="ReactQuiz.js" defer></script>
+</head>
+
+<body>
+   <header>
+      <style>
+         .topnav a {
+            color: rgb(91, 199, 249);
+            text-decoration: underline;
+         }
+
+         .topnav a:hover {
+            color: rgb(255, 255, 255);
+         }
+      </style>
+
+      <div class="topnav">
+         <a href="ReactHome.html">Back to Home</a>
+         <img src="react.png" width='160' height='80' add align="right" />
+      </div>
+
+   </header>
+
+   <article>
+      <h2>React Quiz</h2>
+
+      <div id="container">
+         <div id="instructions">
+            <ul>
+               <li>Click the <strong>Start Quiz</strong> button below to start the quiz. </li> 
+               <br>
+               <li>You will have 60 seconds to answer 5 questions.</li> 
+               <br>
+               <li>Read the questions carefully and <strong>choose the letter</strong> that best describes the answer.</li>
+               <br>
+               <li>You may click the Submit button once finished.</li> 
+               <br>
+               <li>Correct answers will be highlighted in Green.</li>
+               <br>
+               <li>Incorrect answers will be highlighted in Red.</li>
+            </ul>
+            <input id="startquiz" type="button" value="Start Quiz" />
+            <input id="quizclock" readonly />
+            <input id="submitquiz" type="button" value="Submit" />
+         </div>
+         <style>
+            #quiz table tr {
+               font-size: 12px;
+            }
+
+            .wronganswer {
+               color: red;
+            }
+            .rightasnwer {
+               color: greenyellow;
+            }
+         </style>
+         <div id="quiz">
+            <table>
+               <tr>
+                  <td>1.&nbsp;&nbsp;&nbsp; In what year was React JS released by Facebook? </td>
+                  <td> <input id="question1" /></td>
+               </tr>
+               <tr>
+                  <td>a) 2000&nbsp; &#160; b) 1992 &nbsp; &#160; c) 2013 &nbsp; &#160; d) During Covid-19 Pandemic</td>
+               </tr>
+               <tr>
+                  <td>2.&nbsp;&nbsp;&nbsp;React JS is known for building what?</td>
+                  <td> <input id="question2" /></td>
+               </tr>
+               <tr>
+                  <td>a) User Interface&nbsp; &#160; b) Database Interface &nbsp; &nbsp; &#160; c) Facebook&nbsp; &#160;
+                     d) Microsoft Framework</td>
+               </tr>
+               <tr>
+                  <td>3.&nbsp;&nbsp;&nbsp; What makes React run web apps faster and more efficient?</td>
+                  <td><input id="question3" /></td>
+               </tr>
+               <tr>
+                  <td>a) Virtual Space &nbsp; &#160; b) UI &nbsp; &#160; c) JSX &nbsp; &#160; d) Virtual DOM</td>
+               </tr>
+               <tr>
+                  <td>4.&nbsp;&nbsp;&nbsp; React follows what based architecture? </td>
+                  <td><input id="question4" /></td>
+               </tr>
+               <tr>
+                  <td>a) Component&nbsp; &#160; b) Object-oriented&nbsp; &#160; c) Sub-component&nbsp; &#160; d)
+                     Functional-based</td>
+               </tr>
+               <tr>
+                  <td>5.&nbsp;&nbsp;&nbsp;Which of the following is an advantage of React? </td>
+                  <td><input id="question5" /></td>
+               </tr>
+               <tr>
+                  <td>a) Debugging&nbsp; &#160; b) Declarative &nbsp; &#160; c) Cheaper Gas Prices&nbsp; &#160; d)
+                     Creates Classes</td>
+               </tr>
+            </table>
+         </div>
+
+         <div id="overlay" class="hidequiz"></div>
+      </div>
+   </article>
+</body>
+
+</html>
